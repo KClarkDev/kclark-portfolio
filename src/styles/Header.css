@@ -1,0 +1,36 @@
+.header-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100; /*Ensures the header is on top of other content*/
+}
+
+.header {
+  display: flex;
+  background: #302e2f;
+  width: 100%;
+  padding: 10px;
+}
+
+.header h1 {
+  font-family: "Cedarville Cursive", cursive;
+  display: flex;
+  color: #505050;
+  justify-content: flex-start;
+  font-size: 50px;
+  margin: 0;
+  padding-top: 5px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.header-text {
+  font-family: Figtree, serif;
+}
+
+.nav-tabs {
+  border-radius: 0.25rem;
+}

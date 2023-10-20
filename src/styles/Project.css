@@ -1,0 +1,21 @@
+img {
+  height: 50px;
+}
+
+.portfolio {
+  text-align: center;
+  width: 75%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project {
+  border: 1px solid red;
+  padding: 20px;
+  text-align: left;
+  height: 250px;
+}

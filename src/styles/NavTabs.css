@@ -1,0 +1,18 @@
+.nav-tabs,
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: end;
+  padding-right: 15px;
+  align-items: center;
+  border-bottom: none;
+  border-radius: 0.25rem;
+}
+
+li {
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}

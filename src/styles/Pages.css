@@ -1,0 +1,39 @@
+.spacer {
+  height: 75px;
+}
+
+/* Home Page */
+
+.title-card {
+  background-color: #15191f;
+  padding: 10px;
+}
+
+.title-name {
+  font-family: "Playfair Display";
+  justify-content: center;
+  font-size: 72px;
+  color: white;
+  padding: 5%;
+  background-color: transparent;
+  padding-bottom: 0;
+  display: flex;
+}
+
+.title-text {
+  color: #c2b5ae;
+  font-family: Lato;
+  font-size: 18px;
+}
+
+.special-text {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #c63939);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 0;
+}
+
+h1 {
+  display: inline;
+}

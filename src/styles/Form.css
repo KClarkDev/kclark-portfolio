@@ -1,0 +1,50 @@
+label,
+input,
+textarea {
+  display: flex;
+}
+
+label {
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 2px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  line-height: normal;
+}
+
+form {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-name {
+  font-family: "Playfair Display";
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 5%;
+  background-color: transparent;
+  padding-bottom: 0;
+}
+
+textarea {
+  height: 150px;
+}
+
+button {
+  margin: 5%;
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
