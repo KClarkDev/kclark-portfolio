@@ -40,9 +40,27 @@ function ContactForm() {
     setMessage("");
   };
 
+  // Clears the error message when the field is focused
+  const handleFocus = () => {
+    console.log("handleFocus activated");
+    setErrorMessage("");
+  };
+
+  const handleBlur = (e) => {
+    if (!e.target.value.trim()) {
+      console.log("handleBlur activated");
+      setErrorMessage("Field is required.");
+    }
+  };
+
   return (
     <div className="container text-center">
       <h1 className="title-name">Contact me</h1>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
       <form className="form" onSubmit={handleFormSubmit}>
         <label>Name*</label>
         <input
@@ -50,6 +68,9 @@ function ContactForm() {
           name="name"
           onChange={handleInputChange}
           type="text"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
         />
         <label>Email*</label>
         <input
@@ -57,6 +78,9 @@ function ContactForm() {
           name="email"
           onChange={handleInputChange}
           type="email"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
         />
         <label>Message*</label>
         <textarea
@@ -64,14 +88,12 @@ function ContactForm() {
           name="message"
           onChange={handleInputChange}
           type="text"
+          onFocus={handleFocus}
+          onBlur={handleBlur}
+          required
         />
         <button type="submit">Submit</button>
       </form>
-      {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
     </div>
   );
 }

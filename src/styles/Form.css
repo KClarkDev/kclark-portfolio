@@ -48,3 +48,8 @@ button {
   justify-content: center;
   width: auto;
 }
+
+.error-text {
+  color: red;
+  font-weight: bold;
+}
