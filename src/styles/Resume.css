@@ -1,0 +1,31 @@
+.download-link {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  background-color: #302e2f;
+  width: fit-content;
+}
+
+.resume-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.divider {
+  content: "";
+  border-top: 1px solid #000;
+  margin: 10px 0;
+}
+
+h2 {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+
+p {
+  text-align: left;
+}
