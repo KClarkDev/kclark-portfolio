@@ -1,9 +1,11 @@
 footer {
   text-align: center;
   position: fixed;
+  height: 60px;
   bottom: 0;
   background-color: #15191f;
   width: 100%;
+  margin-bottom: 0;
 }
 
 .contact-link {

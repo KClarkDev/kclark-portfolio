@@ -13,7 +13,7 @@ export default function Resume() {
         Download
       </a>
       <h2>Technical Skills</h2>
-      <p>
+      <p className="resume-details">
         <b>Esri Suite</b> ArcGIS Online, Enterprise Portal, Pro, ArcMap, Web App
         Builder, Experience Builder, Field Applications Suite
         <br></br>
@@ -27,7 +27,7 @@ export default function Resume() {
       </p>
       <p className="divider"></p>
       <h2>Professional Experience</h2>
-      <p>
+      <p className="resume-details">
         <b>Geospatial Analyst III</b> - Resource Environmental Solutions, LLC
         (2017 - present)
         <br></br>

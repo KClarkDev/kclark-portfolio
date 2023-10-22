@@ -22,7 +22,6 @@ export default function Home() {
         </div>
         <div className="col-6 title-card">
           <h1 className="title-name">Katherine</h1>
-          <br></br>
           <h1 className="title-name special-text">Clark</h1>
           <p className="title-text">
             GIS ANALYST<br></br>&<br></br>

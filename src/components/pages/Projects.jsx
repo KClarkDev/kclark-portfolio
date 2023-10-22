@@ -4,33 +4,43 @@ import "../../styles/Project.css";
 export default function Projects() {
   const projectsData = [
     {
-      url: "https://github.com/KClarkDev/password-generator",
+      repo: "https://github.com/KClarkDev/password-generator",
+      url: "https://kclarkdev.github.io/password-generator/",
+      imgUrl: "./src/assets/password-gen.jpeg",
       title: "Password Generator",
       details: "Javascript",
     },
     {
-      url: "https://github.com/KClarkDev/timed-quiz-game",
+      repo: "https://github.com/KClarkDev/timed-quiz-game",
+      url: "https://kclarkdev.github.io/timed-quiz-game/",
+      imgUrl: "./src/assets/quiz-question.jpeg",
       title: "Timed Quiz Game",
       details: "Javascript",
     },
     {
-      url: "https://github.com/KClarkDev/weather-underground-web-scraper",
-      title: "Weather Underground Web Scraper",
+      repo: "https://github.com/KClarkDev/puppy-love",
+      url: "https://kclarkdev.github.io/puppy-love/",
+      imgUrl: "./src/assets/puppy-love-husky.jpg",
+      title: "Puppy Love",
+      details: "CSS Animations",
+    },
+    {
+      repo: "https://github.com/KClarkDev/pomodoro-timer",
+      imgUrl: "src/assets/pomodoro.jfif",
+      title: "Pomodoro Timer",
       details: "Python",
     },
     {
-      url: "https://github.com/KClarkDev/logo-generator",
-      title: "Logo Generator",
-      details: "Javascript",
+      repo: "https://github.com/KClarkDev/weather-underground-web-scraper",
+      imgUrl: "src/assets/wu.png",
+      title: "Web Scraping",
+      details: "Python",
     },
     {
-      url: "https://github.com/KClarkDev/employee-tracker",
-      title: "Employee Tracker",
-      details: "Javascript",
-    },
-    {
-      url: "https://github.com/KClarkDev/note-taker-app",
-      title: "Note Taker",
+      repo: "https://github.com/KClarkDev/work-day-scheduler",
+      url: "https://kclarkdev.github.io/work-day-scheduler/",
+      imgUrl: "src/assets/planner.jpeg",
+      title: "Workday Scheduler",
       details: "Javascript",
     },
     // Add more project objects here
@@ -43,8 +53,10 @@ export default function Projects() {
         {projectsData.map((project) => (
           <Project
             key={project.id}
+            imgUrl={project.imgUrl}
             title={project.title}
             details={project.details}
+            repo={project.repo}
             url={project.url}
           />
         ))}

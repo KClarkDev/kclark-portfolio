@@ -19,7 +19,11 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  height: calc(
+    100vh - 160px
+  ); /*Account for fixed height of header and footer, occupy space in between*/
+  padding: 20px;
+  overflow-y: auto;
 }
 a {
   font-weight: 500;
@@ -32,12 +36,8 @@ a:hover {
 
 body {
   background: #c9c7d4;
+  height: fit-content;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  line-height: inherit;
 }
 
 h1 {
